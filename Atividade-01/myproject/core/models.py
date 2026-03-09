@@ -25,3 +25,11 @@ class Client(models.Model):
 
     def __str__(self):
         return self.full_name
+
+class Order(models.Model):
+    client = models.ForeignKey(Client, on_delete=models.CASCADE)
+    creation_date = models.DateTimeField(auto_now_add=True)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f"{self.client} - {self.product}"

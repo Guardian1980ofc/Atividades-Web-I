@@ -1,0 +1,31 @@
+[
+    {
+        "model": "core.category",
+        "pk": 1,
+        "fields": {
+            "name": "Eletrônicos",
+            "description": "Produtos eletrônicos em geral"
+        }
+    },
+    {
+        "model": "core.client",
+        "pk": 1,
+        "fields": {
+            "full_name": "Alice Souza",
+            "email": "alice@email.com",
+            "born_date": "1995-06-15",
+            "is_active": true
+        }
+    },
+    {
+        "model": "core.product",
+        "pk": 1,
+        "fields": {
+            "name": "Notebook",
+            "price": "2500.00",
+            "available": true,
+            "created_at": "2024-01-01T00:00:00Z",
+            "category": 1
+        }
+    }
+]
